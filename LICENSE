@@ -1,6 +1,9 @@
 BSD 3-Clause License
 
-Copyright (c) 2023, Claudia Brito
+Copyright (c) 2023, Cláudia Brito
+
+This software is authored by:
+Cláudia Vanessa Brito <claudia.v.brito@inesctec.pt>
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -26,3 +29,12 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This program makes use and is distributed with the following libraries:
+1. SOTERIA (https://github.com/claudiavmbrito/Soteria) Copyright (c) [2020-2022], INESC TEC.
+2. Gramine (https://github.com/gramineproject/gramine) Copyright (c) Free Software Foundation, Inc.
+3. Apache Spark (https://github.com/apache/spark) Apache Software Foundation License 2.0.
+4. Glow (https://github.com/projectglow/glow) Apache Software Foundation License 2.0.
+
+If you use "GYOSA" in a work that leads to a scientific publication, we would appreciate
+it if you would kindly cite it in your manuscript.
