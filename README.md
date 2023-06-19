@@ -7,5 +7,18 @@ The main goal of **GYOSA** is to provide the community with a privacy-preserving
 
 **Note 1**: This is an academic proof-of-concept prototype and has not received careful code review. This implementation is NOT ready for production use.
 
-**Note 2**: This repository is being updated for future submission. 
+**Note 2**: This repository is being updated according to current submission. 
+
+___
+## Getting Started
+
+The code for **GYOSA** will be fully published here **soon** along with information on all its dependencies.
+
+To offer an easy-to-use guide, we provide scripts to install all the components. 
+
+___
+## Contact
+
+Please contact us at `claudia.v.brito@inesctec.pt` with any questions.
+
 
