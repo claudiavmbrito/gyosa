@@ -18,10 +18,8 @@ To offer an easy-to-use guide, we provide scripts to install all the components.
 
 ### Dependencies
 
-### Dependencies
-
 Gyosa was built and tested with Intel's SGX SDK `2.6`, SGX Driver `1.8`, and Gramine `1.0` (previously named Graphene-SGX).
-By relying on Glow, Gyosa depends on Apache Spark `3.2.1` which upgrades from the previously built Soteria (Apache Spark `2.3.4`). 
+By relying on Glow, Gyosa depends on Apache Spark `3.2.1`, which upgrades from the previously built Soteria (Apache Spark `2.3.4`). 
 
 ### Install Intel SGX
 
