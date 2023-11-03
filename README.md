@@ -35,9 +35,11 @@ bash ./install_sgx.sh
 - To use the updated version of Gramine, follow [Gramine](https://github.com/gramineproject/gramine) documentation. 
 - The manifest files need to be carefully changed to work with the new versions of Gramine. 
 
+
+### Data
+
+#### Synthetic Data
 ___
 ## Contact
 
 Please contact us at `claudia.v.brito@inesctec.pt` with any questions.
-
-
