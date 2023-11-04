@@ -1,7 +1,7 @@
 <h1 align="center">
   <!-- logo as of current commit -->
-  <p>Gyosa</p>
-  <img src=".media/main_page/logo_blue_gyosa.png" />
+ <img src=".media/main_page/logo_blue3_gyosa.png" height="200"/>
+
   <img src="https://img.shields.io/badge/status-research%20prototype-green.svg" />
   <a href="https://opensource.org/licenses/BSD-3-Clause">
     <img src="https://img.shields.io/badge/license-BSD--3-blue.svg" />
