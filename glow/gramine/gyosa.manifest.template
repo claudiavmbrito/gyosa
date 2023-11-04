@@ -16,7 +16,6 @@ loader.env.SPARK_HOME = /opt/spark-3.2.1/
 sgx.enable_stats=1
 sgx.print_stats = 1
 
-
 sgx.enclave_size = 4G
 sgx.thread_num = 128
 
@@ -120,5 +119,4 @@ sgx.allowed_files.tmp     = file:/tmp
 
 # getaddrinfo(3) configuration file, see 'man gai.conf'
 sgx.allowed_files.gaiconf   = file:/etc/gai.conf
-
 
