@@ -1,11 +1,10 @@
 <h1 align="center">
-  <!-- logo as of current commit -->
- <img src=".media/main_page/logo_blue3_gyosa.png" height="200"/>
-
-  <img src="https://img.shields.io/badge/status-research%20prototype-green.svg" />
-  <a href="https://opensource.org/licenses/BSD-3-Clause">
-    <img src="https://img.shields.io/badge/license-BSD--3-blue.svg" />
-  </a>
+<img src=".media/main_page/logo_blue3_gyosa.png" height="200"/>
+<br>
+<img src="https://img.shields.io/badge/status-research%20prototype-green.svg" />
+<a href="https://opensource.org/licenses/BSD-3-Clause">
+<img src="https://img.shields.io/badge/license-BSD--3-blue.svg" />
+</a>
 </h1>
 
 **GYOSA** is a privacy-preserving machine learning solution developed on top of [Soteria](https://github.com/claudiavmbrito/Soteria), [GLOW](https://github.com/projectglow/glow) and [Apache Spark](https://github.com/apache/spark) by resorting to [Gramine](https://github.com/gramineproject/gramine).
@@ -55,6 +54,19 @@ bash ./install_sgx.sh
 ### Glow
 
 You need to compile Glow once after doing  ```git clone```.
+
+#### Dependencies
+
+Glow and Spark are based on Scala, it needs ```scala-2.12.2```.
+Launch the ```sbt``` command line and add the following dependencies for the encryption module.
+
+```
+> libraryDependencies += "org.apache.spark" %% "spark-core" % "3.1.1"
+
+> libraryDependencies += "javax.crypto" % "jce" % "1.8.11"
+```
+
+
 
 
 ### Data
