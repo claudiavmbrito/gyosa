@@ -1,0 +1,124 @@
+# The executable to load in Graphene.
+loader.exec = file:/usr/lib/jvm/bin/java
+loader.execname = java
+loader.insecure__use_cmdline_argv = 1
+
+
+# Graphene environment, including the path to the library OS and the debug
+# option (inline/none).
+loader.preload = file:/home/graphene/Runtime/libsysdb.so
+loader.debug_type = $(GRAPHENEDEBUG)
+
+# Environment variables
+loader.env.LD_LIBRARY_PATH = /lib:/lib/x86_64-linux-gnu:/usr/lib:/usr/lib/x86_64-linux-gnu:/usr/local/lib/:/opt/intel/ippcp/lib/intel64/:/opt/intel/sgxsdk/sdk_libs/
+loader.env.SPARK_HOME = /opt/spark-3.2.1/
+
+sgx.enable_stats=1
+sgx.print_stats = 1
+
+
+sgx.enclave_size = 4G
+sgx.thread_num = 128
+
+# Other configurations
+sgx.allow_file_creation=1
+sgx.file_check_policy=allow_all_but_log
+
+# Mounted FSes. The following "chroot" FSes mount a part of the host FS into the
+# guest. Other parts of the host FS will not be available in the guest.
+
+# Default glibc files, mounted from the Runtime directory in GRAPHENEDIR.
+fs.mount.lib.type = chroot
+fs.mount.lib.path = /lib
+fs.mount.lib.uri = file:/home/graphene/Runtime
+
+# Host-level libraries (/lib/x86_64-linux-gnu) 
+fs.mount.lib2.type = chroot
+fs.mount.lib2.path = /lib/x86_64-linux-gnu
+fs.mount.lib2.uri = file:/lib/x86_64-linux-gnu
+
+# Host-level directory (/usr)
+fs.mount.usr.type = chroot
+fs.mount.usr.path = /usr
+fs.mount.usr.uri = file:/usr
+
+# Host-level directory (/etc)
+fs.mount.etc.type = chroot
+fs.mount.etc.path = /etc
+fs.mount.etc.uri = file:/etc
+
+
+# Host-level configurations
+sgx.trusted_files.nsswitch     = file:/etc/nsswitch.conf
+sgx.trusted_files.group        = file:/etc/group
+sgx.trusted_files.passwd       = file:/etc/passwd
+
+# SGX trusted libraries
+
+# Glibc libraries
+sgx.trusted_files.ld = file:/home/graphene/Runtime/ld-linux-x86-64.so.2
+sgx.trusted_files.libc = file:/home/graphene/Runtime/libc.so.6
+sgx.trusted_files.libm = file:/home/graphene/Runtime/libm.so.6
+sgx.trusted_files.libdl = file:/home/graphene/Runtime/libdl.so.2
+sgx.trusted_files.librt = file:/home/graphene/Runtime/librt.so.1
+sgx.trusted_files.libutil = file:/home/graphene/Runtime/libutil.so.1
+sgx.trusted_files.libpthread = file:/home/graphene/Runtime/libpthread.so.0
+
+# Other libraries required
+sgx.trusted_files.libgcc_s = file:/lib/x86_64-linux-gnu/libgcc_s.so.1
+sgx.trusted_files.nss_files = file:/lib/x86_64-linux-gnu/libnss_files.so.2
+sgx.trusted_files.libnsscompat = file:/lib/x86_64-linux-gnu/libnss_compat.so.2
+sgx.trusted_files.libnssnis  = file:/lib/x86_64-linux-gnu/libnss_nis.so.2
+sgx.trusted_files.libnsl = file:/lib/x86_64-linux-gnu/libnsl.so.1
+sgx.trusted_files.libtinfo = file:/lib/x86_64-linux-gnu/libtinfo.so.5
+sgx.trusted_files.libjava = file:/usr/lib/jvm/jre/lib/amd64/libjava.so
+sgx.trusted_files.libjvm = file:/usr/lib/jvm/jre/lib/amd64/server/libjvm.so
+sgx.trusted_files.libjli = file:/usr/lib/jvm/lib/amd64/jli/libjli.so
+sgx.trusted_files.libverify = file:/usr/lib/jvm/jre/lib/amd64/libverify.so
+sgx.trusted_files.libzip = file:/usr/lib/jvm/jre/lib/amd64/libzip.so
+
+#Apache Spark configurations and specific libraries (Trusted)
+#sgx.trusted_files.conf1=file:$(INSTALL_DIR)/conf/spark-env.sh
+#sgx.trusted_files.conf2=file:$(INSTALL_DIR)/conf/spark-defaults.sh
+sgx.trusted_files.jvm=file:/usr/lib/jvm/jre/lib/amd64/jvm.cfg
+sgx.trusted_files.resources=file:/usr/lib/jvm/jre/lib/resources.jar
+sgx.trusted_files.rt=file:/usr/lib/jvm/jre/lib/rt.jar
+sgx.trusted_files.jsse = file:/usr/lib/jvm/jre/lib/jsse.jar
+sgx.trusted_files.sunjce_provider = file:/usr/lib/jvm/jre/lib/ext/sunjce_provider.jar
+sgx.trusted_files.jfxrt = file:/usr/lib/jvm/jre/lib/ext/jfxrt.jar
+sgx.trusted_files.sunpkcs11 = file:/usr/lib/jvm/jre/lib/ext/sunpkcs11.jar
+sgx.trusted_files.zipfs = file:/usr/lib/jvm/jre/lib/ext/zipfs.jar
+sgx.trusted_files.dnsns = file:/usr/lib/jvm/jre/lib/ext/dnsns.jar
+sgx.trusted_files.jaccess = file:/usr/lib/jvm/jre/lib/ext/jaccess.jar
+sgx.trusted_files.clrdrdata = file:/usr/lib/jvm/jre/lib/ext/cldrdata.jar
+sgx.trusted_files.sunec = file:/usr/lib/jvm/jre/lib/ext/sunec.jar
+sgx.trusted_files.localedata = file:/usr/lib/jvm/jre/lib/ext/localedata.jar
+sgx.trusted_files.nashorn = file:/usr/lib/jvm/jre/lib/ext/nashorn.jar
+
+
+#Apache Spark benchmark files (Trusted) (only an example)
+#the script to run
+#sgx.trusted_files.script  = file:example.py
+sgx.trusted_files.example  = file:HelloWorld.class
+sgx.trusted_files.exampletree  = file:BinarySearchTree.class
+
+#the data
+#sgx.allowed_files.data   = file:hello/scala-2.11/target/hello_2.11-1.0.jar
+#sgx.allowed_files.classscala     = file:hello/src/main/scala/hello.scala
+sgx.allowed_files.meta_index = file:/usr/lib/jvm/jre/lib/meta-index
+
+#Apache Spark configurations (Trusted)
+sgx.trusted_files.configuration=file:/opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/spark/conf/spark-env.sh
+
+
+#for random files 
+sgx.allowed_files.tmp     = file:/tmp
+#Spark jar directory
+#sgx.allowed_files.jar = file:/home/sgx-spark/examples/target/scala-2.11/jars/
+
+
+
+# getaddrinfo(3) configuration file, see 'man gai.conf'
+sgx.allowed_files.gaiconf   = file:/etc/gai.conf
+
+

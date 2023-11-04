@@ -57,7 +57,7 @@ You need to compile Glow once after doing  ```git clone```.
 
 #### Dependencies
 
-Glow and Spark are based on Scala, it needs ```scala-2.12.2```.
+Glow and Spark are based on Scala, it needs ```scala-2.12.8```.
 Launch the ```sbt``` command line and add the following dependencies for the encryption module.
 
 ```
