@@ -1,18 +1,29 @@
 import random
+import os
 
-# Define the number of SNPs (as argument and flag)
-num_snps = sys.argv[1]
 
 #num_snps = 1.0e6
+#-p path -snp number of snps -f number of files
+parser.add_argument("-p", "--path", help="Path to the VCF file")
+parser.add_argument("-snp", "--numsnps", help="Number of Snps", type=int)
+parser.add_argument("-f", "--numfiles", help="Number of Files", type=int)
+
+args = parser.parse_args()
+
+# Define Path as argument
+path = args.path
+
+# Define the number of SNPs
+num_snps = args.snp
 
 # Define the number of VCF files (as argument)
-
-num_files = sys.argv[2]
+num_files = args.numfiles
 
 # Loop over the number of VCF files
 for file_num in range(num_files):
     # Open a VCF file for writing
-    with open(f"synthetic_{file_num}.vcf", "w") as outfile:
+    file_path = os.path.join(path, f"synthetic_{file_num}.vcf")
+    with open(file_path, "w") as outfile:
         # Write the VCF header
         outfile.write("##fileformat=VCFv4.2\n")
         outfile.write("#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\n")

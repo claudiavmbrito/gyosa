@@ -1,14 +1,20 @@
 import random
 
-# Define Path as argument
-Path = sys.argv[1]
+#-db DATABSE -u USERNAME -p PASSWORD -size 20
+parser.add_argument("-p", "--path", help="Path to the VCF file")
+parser.add_argument("-snp", "--numsnps", help="Number of Snps", type=int)
 
+args = parser.parse_args()
 
 # Define the number of SNPs
-num_snps = 5.51e6
+num_snps = args.snp
+
+path= args.path
+
+filepath=os.path.join(path, f"synthetic.vcf")
 
 # Open a VCF file for writing
-with open("synthetic.vcf", "w") as outfile:
+with open(filepath, "w") as outfile:
     # Write the VCF header
     outfile.write("##fileformat=VCFv4.2\n")
     outfile.write("#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\n")

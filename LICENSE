@@ -1,6 +1,6 @@
 BSD 3-Clause License
 
-Copyright (c) 2023, Cláudia Brito
+Copyright (c) 2023, INESC TEC
 
 This software is authored by:
 Cláudia Vanessa Brito <claudia.v.brito@inesctec.pt>
@@ -31,7 +31,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 This program makes use and is distributed with the following libraries:
-1. SOTERIA (https://github.com/claudiavmbrito/Soteria) Copyright (c) [2020-2022], INESC TEC.
+1. SOTERIA (https://github.com/claudiavmbrito/Soteria) Copyright (c) [2020-2023], INESC TEC.
 2. Gramine (https://github.com/gramineproject/gramine) Copyright (c) Free Software Foundation, Inc.
 3. Apache Spark (https://github.com/apache/spark) Apache Software Foundation License 2.0.
 4. Glow (https://github.com/projectglow/glow) Apache Software Foundation License 2.0.
