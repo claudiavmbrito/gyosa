@@ -1,0 +1,1319 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector(-Dspark.ui.enabled=false, -Xmx1024m)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 44 initial tasks for 44 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.pipe.TextPiperSuite, sbt.ForkMain$SubclassFingerscan@365b81a4, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTextPiperSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- text input and output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- text input requires one column[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- text input requires string column[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- does not break on null row[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- command fails[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.VCFStreamWriterSuite, sbt.ForkMain$SubclassFingerscan@6dde76d2, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVCFStreamWriterSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- VC to infer from has mixed missing and non-missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Check for new sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Saw present sample IDs when inferred missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Saw present sample IDs when inferred missing, same number of samples[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Number of missing does not match[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Unexpected missing sample ID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Don't write header with VC if told not to[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Don't write header for empty stream if told not to[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Empty partition[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Stream closes before writer closes[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 10 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.bgen.BgenRowConverterSuite, sbt.ForkMain$SubclassFingerscan@2b6edca3, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBgenRowConverterSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 8 bit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 16 bit (with missing samples)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 32 bit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- phased[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- works with adaptive query execution enabled[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Infer phasing from ploidy[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- If phasing ambiguous, use default phasing when inferring from ploidy[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Infer ploidy from phasing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- If ploidy ambiguous, use default ploidy when inferring from phasing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- If no ploidy or phasing info provided, use default ploidy[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Infer ploidy for unphased up to max[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throws on mixed phasing[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 12 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.tertiary.NewtonIterationsStateSuite, sbt.ForkMain$SubclassFingerscan@259fed23, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mNewtonIterationsStateSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- initializes beta correctly[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.pipe.PipeTransformerSuite, sbt.ForkMain$SubclassFingerscan@52b66311, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPipeTransformerSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- cleanup[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read input and output formatters from service loader[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing input formatter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing output formatter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- could not find input formatter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- could not find output formatter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- pass command as a Seq[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- quarantine on failure[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 8 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.bgen.BgenReaderSuite, sbt.ForkMain$SubclassFingerscan@6f334d58, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBgenReaderSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 8 bit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 16 bit (with missing samples)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 32 bit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- phased[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- complex 16 bit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- skip entire file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- skip to last record[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read with spark[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read with spark (no index)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read only certain fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- be permissive if schema includes fields that can't be derived from BGEN[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sample IDs present if .sample file is provided[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sample IDs present if no sample column provided but matches default[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Returns all sample IDs provided in corrupted .sample file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Only uses .sample file if no samples in bgen file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throws if wrong provided column name[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Sample IDs present using provided column name[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throws if default sample column doesn't match[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Skip non-bgen files[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- schema does not include sample id field if there are no ids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- schema includes sample id if at least one file has ids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- schema includes sample id if sample id file is provided[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- schema does not include sample ids if `includeSampleIds` is false[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- schema does not include calls if `emitHardCalls` is false[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read zstd compressed file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read uncompressed file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard call threshold default (0.9)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard call threshold 0.9[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard call threshold 0.95[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard call with phased[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- mixed phased and ploidy[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 31 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.util.StringUtilsSuite, sbt.ForkMain$SubclassFingerscan@5c012601, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mStringUtilsSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- doesn't change lower case string[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- doesn't change lower case string with underscores[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- simple camel to snake case[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- upper camel to snake[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- mixed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- SnakeCaseMap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- SnakeCaseMap (add / subtract)[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 7 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.VCFSchemaInferrerSuite, sbt.ForkMain$SubclassFingerscan@605c54d8, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVCFSchemaInferrerSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- includes base fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- includes attributes field if not flattening info fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sampleId field (true)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sampleId field (false)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flatten info field (VCFField(Character,None,StringType,descriptionOne))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flatten info field (VCFField(String,None,StringType,descriptionTwo))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flatten info field (VCFField(Integer,None,IntegerType,descriptionThree))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flatten info field (VCFField(Float,None,DoubleType,descriptionFour))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flatten info field (VCFField(Flag,None,BooleanType,descriptionFive))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flatten info field (VCFField(String,Some(G),ArrayType(StringType,true),descriptionSix))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flatten info field (VCFField(Integer,Some(G),ArrayType(IntegerType,true),descriptionSeven))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flatten info field (VCFField(Float,Some(G),ArrayType(DoubleType,true),descriptionEight))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer format fields (VCFField(Character,None,StringType,descriptionOne))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer format fields (VCFField(String,None,StringType,descriptionTwo))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer format fields (VCFField(Integer,None,IntegerType,descriptionThree))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer format fields (VCFField(Float,None,DoubleType,descriptionFour))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer format fields (VCFField(String,Some(G),ArrayType(StringType,true),descriptionSix))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer format fields (VCFField(Integer,Some(G),ArrayType(IntegerType,true),descriptionSeven))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer format fields (VCFField(Float,Some(G),ArrayType(DoubleType,true),descriptionEight))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- validate headers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to and from schema (ToFromSchemaTestCase(List(INFO=<ID=a,Number=14,Type=String,Description="">),List(FORMAT=<ID=b,Number=1,Type=String,Description="">)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to and from schema (ToFromSchemaTestCase(List(INFO=<ID=a,Number=A,Type=String,Description="">),List(FORMAT=<ID=a,Number=A,Type=String,Description="">)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to and from schema (ToFromSchemaTestCase(List(INFO=<ID=a,Number=.,Type=Integer,Description="">),List(FORMAT=<ID=a,Number=.,Type=Integer,Description="">)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to and from schema (ToFromSchemaTestCase(List(INFO=<ID=monkey,Number=0,Type=Flag,Description="">),List()))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to and from schema (ToFromSchemaTestCase(List(INFO=<ID=PL,Number=0,Type=Flag,Description="">),List()))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to and from schema (ToFromSchemaTestCase(List(),List()))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to and from schema (ToFromSchemaTestCase(List(INFO=<ID=a,Number=G,Type=Float,Description="">),List(FORMAT=<ID=b,Number=R,Type=Float,Description="">)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- include count metadata (non-integer)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- include count metadata (integer[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- counts for fields without metadata[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- don't include sample ids or otherFields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- don't return same key multiple times[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- CSQ[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- ANN[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 34 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.sql.util.ExpectsGenotypeFieldsSuite, sbt.ForkMain$SubclassFingerscan@7443cddb, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mExpectsGenotypeFieldsSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- use genotype_states after splitting multiallelics[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- use genotype_states after array_zip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- type check[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.tertiary.LiftOverCoordinatesExprSuite, sbt.ForkMain$SubclassFingerscan@7b37a44d, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLiftOverCoordinatesExprSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Basic[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Some failures[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- High min match[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Low min match[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Do not cache chain file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Null contigName[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Null start[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Null end[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Null minMatchRatio[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Chain file must be constant[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 10 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.tertiary.VariantUtilExprsSuite, sbt.ForkMain$SubclassFingerscan@1e50841c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVariantUtilExprsSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- simple cases[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- -1 if any -1 appears in call array[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- -1 if call array is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(,,Unknown))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(ACG,ATG,Transition))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(AG,ATG,Insertion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(AG,ATCTCAG,Insertion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(ATG,A,Deletion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(ACTGGGG,AG,Deletion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(A,*,SpanningDeletion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(A,C,Transversion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(A,G,Transition))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(A,T,Transversion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(C,A,Transversion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(C,G,Transversion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(C,T,Transition))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(G,A,Transition))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(G,C,Transversion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(G,T,Transversion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(T,A,Transversion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(T,C,Transition))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant type (TestCase(T,G,Transversion))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- add struct field has correct schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- add struct field has correct values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (unphased)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (unphased, below threshold)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (phased, 1 below threshold)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (phased, lower threshold)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (phased, 2 alts)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (phased 2 alts (2))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (unphased, lower threshold)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (unphased, 2 alts)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (unphased, 2 alts (2))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (unphased, 3 alts)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (null probabilities)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (null num alts)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls (null phasing)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls casts input[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hard calls threshold must be constant[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to/from sparse vector (List())[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to/from sparse vector (List(1.0, 2.0, 3.0))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to/from sparse vector (List(Infinity, -Infinity, NaN))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to/from sparse vector (List(-1.0, -1.23, 3.14159))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to/from dense vector (List())[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to/from dense vector (List(1.0, 2.0, 3.0))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to/from dense vector (List(Infinity, -Infinity, NaN))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- to/from dense vector (List(-1.0, -1.23, 3.14159))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- cast input when converting to vector[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- explode matrix ((dense col major,1.0  5.0  9.0   [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m2.0  6.0  10.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m3.0  7.0  11.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m4.0  8.0  12.0  ))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- explode matrix ((dense row major,1.0  5.0  9.0   [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m2.0  6.0  10.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m3.0  7.0  11.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m4.0  8.0  12.0  ))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- explode matrix ((sparse col major,4 x 3 CSCMatrix[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(0,0) 1.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(1,0) 2.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(2,0) 3.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(3,0) 4.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(0,1) 5.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(1,1) 6.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(2,1) 7.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(3,1) 8.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(0,2) 9.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(1,2) 10.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(2,2) 11.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(3,2) 12.0))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- explode matrix ((sparse row major,4 x 3 CSCMatrix[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(0,0) 1.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(1,0) 2.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(2,0) 3.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(3,0) 4.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(0,1) 5.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(1,1) 6.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(2,1) 7.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(3,1) 8.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(0,2) 9.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(1,2) 10.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(2,2) 11.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m(3,2) 12.0))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- explode matrix (null)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- subset struct[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- expand struct only works on structs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- expand struct scala[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 56 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.tertiary.LinearRegressionSuite, sbt.ForkMain$SubclassFingerscan@4d824e46, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLinearRegressionSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- against R glm[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- against R glm (Apache OLS)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- intercept only, 1 site[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- intercept only, many sites[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- many covariates, many sites[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- many covariates, many sites, with spark[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- multiple phenotypes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- large or NaN p value if genotypes are in covariate span[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- throws exception if more covariates than samples[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- throws exception if number of genotypes and phenotypes do not match[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- throws exception if number of samples does not match between genotypes and covariates[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 11 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.bgen.BgenWriterSuite, sbt.ForkMain$SubclassFingerscan@53df6e5c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBgenWriterSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 8 bit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 16 bit (with missing samples)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 32 bit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- phased[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- complex 16 bit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing variant ID and rsid[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- single name[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- invalid bitsPerProb option[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Represent probabilities as int[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Probability block sizes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Empty file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 8 bit VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 16 bit (with missing samples) VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased 32 bit VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- phased VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No genotype[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 17 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(org.apache.spark.sql.catalyst.expressions.QuinaryExpressionSuite, sbt.ForkMain$SubclassFingerscan@6e969bda, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mQuinaryExpressionSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- nullSafeCodeGen for un-nullable expression with Some argument[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- nullSafeCodeGen for un-nullable expression with None argument[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.plink.PlinkReaderSuite, sbt.ForkMain$SubclassFingerscan@605e24ce, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPlinkReaderSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read PLINK files[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Missing FAM[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Missing BIM[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Wrong BIM delimiter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Wrong FAM delimiter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read subset of columns[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read compared to VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read BED without magic bytes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read prematurely truncated BED[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Use IID only for sample ID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Invalid arg for mergeFidIid[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- PLINK file format does not support writing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Be permissive if schema includes fields that can't be derived from PLINK files[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Accept glob path[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Support not having sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Full file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Start in magic block[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Start at beginning of first block[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Start in middle of first block[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Zero-variant slice[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- One-variant slice[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Multi-variant slice[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Get block size[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Big PLINK files[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 24 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.sql.BigFileDatasourceSuite, sbt.ForkMain$SubclassFingerscan@7589b970, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBigFileDatasourceSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- save mode: append[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- save mode: overwrite[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- save mode: error if exists[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- save mode: ignore[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- new hadoop conf picks up spark confs and options[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.sql.SqlExtensionProviderSuite, sbt.ForkMain$SubclassFingerscan@3c522117, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSqlExtensionProviderSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uses service provider[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- transformer names are converted to snake case[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- options are converted to snake case[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- java map options[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- tuple options[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- accept non-string values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- float arguments[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- registers bgz conf[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- one arg function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- two arg function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- var args function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- can call optional arg function[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 12 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.TabixHelperSuite, sbt.ForkMain$SubclassFingerscan@69a94942, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTabixHelperSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- getSmallestQueryInterval: non-overlapping start and end intervals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- getSmallestQueryInterval: non-overlapping touching[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- getSmallestQueryInterval: overlapping by one[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- getSmallestQueryInterval: overlapping by more than 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- getSmallestQueryInterval: start after end[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- getSmallestQueryInterval: start almost after end[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- getSmallestQueryInterval: no start[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- getSmallestQueryInterval: no end[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: contig, start <, end >[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: contig, start <=, end >=[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: contig, start >=, end <=[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: contig, start >, end <[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: contig, start =, end =[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: No contig, No Start, No End[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: inconsistent contig[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: unsupported conditions on contig[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: And with equals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: And with inequalities non-overlapping[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: Or with equals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: Or with inequalities non-overlapping[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: Or with inequalities non-overlapping touching[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: Or with inequalities overlapping[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: Or with inequalities overlapping reverse[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: And nested in Or[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parseFilter: And nested in Or nested in Or[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: start and end intervals non-overlapping[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: start and end intervals non-overlapping touching [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: start and end intervals non-overlapping by 1 [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: start and end intervals overlapping more than 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: start after end[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: start almost after end[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: no contig[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: inconsistent contig[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: no start[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- makeFilteredInterval: no end[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- useFilterParser = false while useTabixIndex = true[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- no filter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- invalid BGZ[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No index file found[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- gzip files[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start > 0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start >= 0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start > -1)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start = 10004193 and end > -12)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start > 10004193)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start >= 10004193)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start <= 10004768 and end >= 10004779)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start <= 10004768 and end > 10004779)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start < 10004768 and end >= 10004779)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and start > 10001433 and end < 10001445)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName = '20' and ((start>10004223 and end <10004500) or (start > 10003500 and end < 10004000)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and ((start>10004223 and end <10004500) or (start > 10003500 and end < 10004000) or (end= 10004725)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and (start=10000211 or end=10003817))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and ((start>10004223 and end <10004500) or (start > 10003500 and end < 10004000)) and contigName='20')[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parser/Tabix vs Not (contigName= '20' and (not(start>10004223 and end <10004500) or not(start > 10003500 and end < 10004000)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Do not try to read index files[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Overlapping partitions and tabix offsets[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Check if partition includes BGZF block start[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Small partitions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Get all of BGZIP block even if file partition ends partway through[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 60 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.VCFPiperSuite, sbt.ForkMain$SubclassFingerscan@abe292f, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVCFPiperSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Cat[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Prepend chr[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Remove INFO[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Remove non-header rows[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- environment variables[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- empty partition[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- empty partition and missing samples[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- stdin and stderr threads are cleaned up for successful commands[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- command doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- no rows[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- task context is defined in each thread[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing sample names[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- input validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- output validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- throw if input formatter fails[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- pass command as a Seq[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 16 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.tertiary.SampleQcExprsSuite, sbt.ForkMain$SubclassFingerscan@613d90d5, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSampleQcExprsSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sample_call_summary_stats high level test (true)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sample_call_summary_stats high level test (false)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- heterozygous only[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- empty dataframe[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- dp stats (true)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- dp stats (false)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- dp stats (with null)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- gq stats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sample ids are propagated if included ((expand_struct(sample_call_summary_stats(genotypes, referenceAllele, alternateAlleles)[0]),true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sample ids are propagated if included ((expand_struct(sample_call_summary_stats(genotypes, referenceAllele, alternateAlleles)[0]),false))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sample ids are propagated if included ((expand_struct(sample_gq_summary_stats(genotypes)[0]),true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sample ids are propagated if included ((expand_struct(sample_gq_summary_stats(genotypes)[0]),false))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sample ids are propagated if included ((expand_struct(sample_dp_summary_stats(genotypes)[0]),true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- sample ids are propagated if included ((expand_struct(sample_dp_summary_stats(genotypes)[0]),false))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- type check failures ((genotypes,referenceAllele,Genotypes field must be an array of structs))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- type check failures ((genotypes,transform(genotypes, gt -> subset_struct(gt, 'sampleId')),Genotype struct was missing required fields))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- type check failures ((referenceAllele,alternateAlleles,Reference allele must be a string))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- type check failures ((alternateAlleles,referenceAllele,Alternate alleles must be an array of strings))[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 18 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.tertiary.AggregateByIndexSuite, sbt.ForkMain$SubclassFingerscan@594a2359, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAggregateByIndexSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- basic *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.sql.AnalysisException: A lambda function should only be used in a higher order function. However, its class is org.apache.spark.sql.catalyst.expressions.aggregate.AggregateExpression, which is not a higher order function.; line 1 pos 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$103(Analyzer.scala:2092)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.map(Option.scala:163)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$102(Analyzer.scala:2087)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$.withPosition(package.scala:60)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2094)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2084)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- basic (scala API)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- with types changes *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.sql.AnalysisException: A lambda function should only be used in a higher order function. However, its class is org.apache.spark.sql.catalyst.expressions.aggregate.AggregateExpression, which is not a higher order function.; line 2 pos 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$103(Analyzer.scala:2092)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.map(Option.scala:163)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$102(Analyzer.scala:2087)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$.withPosition(package.scala:60)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2094)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2084)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- with grouping *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.sql.AnalysisException: A lambda function should only be used in a higher order function. However, its class is org.apache.spark.sql.catalyst.expressions.aggregate.AggregateExpression, which is not a higher order function.; line 1 pos 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$103(Analyzer.scala:2092)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.map(Option.scala:163)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$102(Analyzer.scala:2087)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$.withPosition(package.scala:60)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2094)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2084)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- mean function *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.sql.AnalysisException: A lambda function should only be used in a higher order function. However, its class is org.apache.spark.sql.catalyst.expressions.aggregate.AggregateExpression, which is not a higher order function.; line 2 pos 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$103(Analyzer.scala:2092)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.map(Option.scala:163)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$102(Analyzer.scala:2087)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$.withPosition(package.scala:60)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2094)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2084)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- type error[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- no evaluate function *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.sql.AnalysisException: A lambda function should only be used in a higher order function. However, its class is org.apache.spark.sql.catalyst.expressions.aggregate.AggregateExpression, which is not a higher order function.; line 2 pos 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$103(Analyzer.scala:2092)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.map(Option.scala:163)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$102(Analyzer.scala:2087)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$.withPosition(package.scala:60)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2094)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2084)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- empty dataframe *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.sql.AnalysisException: A lambda function should only be used in a higher order function. However, its class is org.apache.spark.sql.catalyst.expressions.aggregate.AggregateExpression, which is not a higher order function.; line 2 pos 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$103(Analyzer.scala:2092)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.map(Option.scala:163)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$102(Analyzer.scala:2087)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$.withPosition(package.scala:60)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2094)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2084)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- null array *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.sql.AnalysisException: A lambda function should only be used in a higher order function. However, its class is org.apache.spark.sql.catalyst.expressions.aggregate.AggregateExpression, which is not a higher order function.; line 2 pos 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$103(Analyzer.scala:2092)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.map(Option.scala:163)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.$anonfun$applyOrElse$102(Analyzer.scala:2087)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.package$.withPosition(package.scala:60)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2094)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveFunctions$$anonfun$apply$25$$anonfun$applyOrElse$101.applyOrElse(Analyzer.scala:2084)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:584)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 9 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.normalizevariants.NormalizeVariantsTransformerSuite, sbt.ForkMain$SubclassFingerscan@42b1c9b0, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mNormalizeVariantsTransformerSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- normalization transform no-reference[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Invalid reference path[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Reference not indexed (test-data/variantsplitternormalizer-test/20_altered_noindex.fasta)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Reference not indexed (test-data/variantsplitternormalizer-test/20_altered_bgzip_noindex.fasta.gz)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Reference compression modes (test-data/variantsplitternormalizer-test/20_altered.fasta)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Reference compression modes (test-data/variantsplitternormalizer-test/20_altered_bgzip.fasta.gz)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- normalize variants transformer[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- backward mode option compatibility do-normalize-no-split[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- backward mode option compatibility no-normalize-do-split[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- backward mode option compatibility do-normalize-do-split[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- replace_columns option[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 11 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.splitmultiallelics.VariantSplitterSuite, sbt.ForkMain$SubclassFingerscan@65f0627e, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVariantSplitterSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test splitVariants[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test splitInfoFields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test splitGenotypeFields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test refAltColexOrderIdxArray[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 4 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.LiftOverVariantsTransformerSuite, sbt.ForkMain$SubclassFingerscan@791dac54, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLiftOverVariantsTransformerSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Basic[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Some failures[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Don't change original fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Try lifting with insufficient fields, drop StructField(contigName,StringType,true)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Try lifting with insufficient fields, drop StructField(start,LongType,true)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Try lifting with insufficient fields, drop StructField(end,LongType,true)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Try lifting with insufficient fields, drop StructField(referenceAllele,StringType,true)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Liftover reverse strand testLiftoverBiallelicIndels.vcf[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Liftover reverse strand testLiftoverMultiallelicIndels.vcf[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Liftover reverse strand testLiftoverSwapRefAltVariants.vcf[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Simple indels[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Indel flip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Missing chain file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Missing reference file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No matching refseq[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Reverse complemented bases don't match new reference[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Arrays flipped during ref/alt swap[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 17 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.common.WithUtilsSuite, sbt.ForkMain$SubclassFingerscan@d31d1b7, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mWithUtilsSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- closes after successful function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- closes after failed function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unlocks after successful function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unlocks after failed function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncaches RDD after successful function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncaches RDD after failed function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncaches Dataset after successful function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncaches Dataset after failed function[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 8 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.splitmultiallelics.SplitMultiallelicsTransformerSuite, sbt.ForkMain$SubclassFingerscan@7387732f, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSplitMultiallelicsTransformerSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- split multiallelics transform[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.normalizevariants.VariantNormalizerSuite, sbt.ForkMain$SubclassFingerscan@65cfec28, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVariantNormalizerSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test normalizeVariant[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.pipe.CSVPiperSuite, sbt.ForkMain$SubclassFingerscan@2947a3b, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCSVPiperSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Delimiter and header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Some empty partitions with header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Single row with header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No rows input[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No rows output[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Default options: comma delimiter and no header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Some empty partitions without header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Single row and no header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No rows and no header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- GWAS[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Gene-based GWAS[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Big file[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 12 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.MultiFileVCFWriterSuite, sbt.ForkMain$SubclassFingerscan@6ed39315, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMultiFileVCFWriterSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read single sample VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read single sample VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read multi-sample VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read multi-sample VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read VEP VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read VEP VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read Loftee VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read Loftee VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read SnpEff VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read SnpEff VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Use VCF parser without sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Use VCF parser without sample IDs (many partitions)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Use VCF parser with sample IDs (many partitions)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Strict validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Output bgzf compressed file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Output gzip compressed file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant context validation settings obey stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Provided header is sorted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Path header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Infer header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Empty file with inferred header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Empty file with determined header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No genotypes column[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No sample IDs column[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- write succeeds if optional fields are dropped[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- validate schema before write[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- validate genotype schema before write[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Corrupted header lines are not written[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Invalid validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Some empty partitions and infer sample IDs *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected exception org.apache.spark.SparkException to be thrown, but no exception was thrown (VCFFileWriterSuite.scala:507)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Fails if inferred present sample IDs but row missing sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Fails if inferred present sample IDs but row has different sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Fails if injected missing sample IDs don't match number of samples[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Fails if injected missing sample IDs but has sample IDs[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 34 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.transformers.blockvariantsandsamples.BlockVariantsAndSamplesTransformerSuite, sbt.ForkMain$SubclassFingerscan@62fd025, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBlockVariantsAndSamplesTransformerSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test blocked vs expected[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- inconsistent number of values[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.gff.GffReaderSuite, sbt.ForkMain$SubclassFingerscan@4b10bcb1, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGffReaderSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Schema inference (test-data/gff/test_gff_with_fasta.gff)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Schema inference (test-data/gff/test_gff_with_fasta_multicase_attribute.gff)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Case-and-underscore-insensitive attribute column names in user-specified schema (StructType(StructField(seqId,StringType,true),StructField(source,StringType,true),StructField(type,StringType,true),StructField(start,LongType,true),StructField(end,LongType,true),StructField(score,DoubleType,true),StructField(strand,StringType,true),StructField(phase,IntegerType,true),StructField(attributes,StringType,true),StructField(dbxref,ArrayType(StringType,true),true),StructField(iscircular,BooleanType,true)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Case-and-underscore-insensitive attribute column names in user-specified schema (StructType(StructField(seqId,StringType,true),StructField(source,StringType,true),StructField(type,StringType,true),StructField(start,LongType,true),StructField(end,LongType,true),StructField(score,DoubleType,true),StructField(strand,StringType,true),StructField(phase,IntegerType,true),StructField(attributes,StringType,true),StructField(Dbxref,ArrayType(StringType,true),true),StructField(isCircular,BooleanType,true)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Case-and-underscore-insensitive attribute column names in user-specified schema (StructType(StructField(seqId,StringType,true),StructField(source,StringType,true),StructField(type,StringType,true),StructField(start,LongType,true),StructField(end,LongType,true),StructField(score,DoubleType,true),StructField(strand,StringType,true),StructField(phase,IntegerType,true),StructField(attributes,StringType,true),StructField(dbx_Ref,ArrayType(StringType,true),true),StructField(is_Circular,BooleanType,true)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read gff with user-specified schema containing attributesField[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read gff with user-specified schema containing nonexistent column[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read gff3, gzipped gff3 and bgzipped gff3 with inferred schema (test-data/gff/test_gff_with_fasta.gff)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read gff3, gzipped gff3 and bgzipped gff3 with inferred schema (test-data/gff/test_gff_with_fasta.gff.gz)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read gff3, gzipped gff3 and bgzipped gff3 with inferred schema (test-data/gff/test_gff_with_fasta.gff.bgz)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read gff3, gzipped gff3 and bgzipped gff3 with inferred schema (test-data/gff/test_gff_with_fasta_bgzip.gff.gz)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Column pruning[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- df.count vs df.rdd.count[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read gff glob[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read empty gff[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- GFF file format does not support writing[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 16 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.tertiary.VariantQcExprsSuite, sbt.ForkMain$SubclassFingerscan@7e491190, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVariantQcExprsSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hardy weinberg[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- hardy weinberg doesn't crash if there are no homozygous[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- call stats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- call stats (missing genotypes)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- call stats (haploid)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- call stats (weird genotype struct)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- array stats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- array stats (empty)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- array stats (1 element)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- array stats (contains null)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- array stats (negative values)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- dp stats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- gq stats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- write to parquet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- analysis error when genotype doesn't exist for call stats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- analysis error when genotype doesn't exist for hardy weinberg[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- analysis error when genotype is missing calls for call stats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- mean substitute for array of doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- mean substitute for array of ints[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- mean substitute with one non-missing element[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- mean substitute with all missing elements[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- mean substitution's default missing value is -1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- mean substitute big array[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- null array[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- empty array[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- array with no missing values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unsupported array type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unsupported type for array arg[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unsupported missing value type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- assert_true_or_error error message must be constant[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- assert_true_or_error returns null if condition passes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- assert_true_or_error throws if condition fails[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- assert_true_or_error throws if value is null[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 34 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.tertiary.LogisticRegressionSuite, sbt.ForkMain$SubclassFingerscan@49f55388, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLogisticRegressionSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: true) (TestDataAndGoldenStats(lrt,TestData([[D@7f2fbad,[D@d68dc67,[[D@78d546bf,None),LogitTestResults(-0.611263,0.54266503,List(0.2901759, 1.014851),0.04693173)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: true) (TestDataAndGoldenStats(lrt,TestData([[D@7f2fbad,[D@d68dc67,[[D@78d546bf,Some([D@75dff33a)),LogitTestResults(-0.611263,0.54266503,List(0.2901759, 1.014851),0.04693173)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: true) (TestDataAndGoldenStats(lrt,TestData([[D@7f2fbad,[D@d68dc67,[[D@78d546bf,Some([D@65e051bf)),LogitTestResults(-0.591478,0.5535084,List(0.295733828, 1.035971),0.05590138)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: true) (TestDataAndGoldenStats(lrt,TestData([[D@2e202280,[D@7c926945,[[D@76de13ce,None),LogitTestResults(0.4768,1.610951,List(0.1403952, 18.48469),0.6935)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: true) (TestDataAndGoldenStats(lrt,TestData([[D@2e202280,[D@1154c903,[[D@76de13ce,None),LogitTestResults(1.4094,4.0936366,List(0.26608762, 62.97873),0.2549)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: true) (TestDataAndGoldenStats(lrt,TestData([[D@3ecfdd8b,[D@51785356,[[D@573e6ad4,None),LogitTestResults(3.1776,23.9884595,List(0.007623126, 75486.900886),0.35)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: true) (TestDataAndGoldenStats(firth,TestData([[D@6095bde1,[D@207617fd,[[D@33870246,None),LogitTestResults(3.09601263,22.109616066072057,List(0.829489688841271, 589.3203006480667),0.004951873)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: true) (TestDataAndGoldenStats(firth,TestData([[D@6095bde1,[D@207617fd,[[D@33870246,Some([D@17cbb628)),LogitTestResults(3.09601263,22.109616066072057,List(0.829489688841271, 589.3203006480667),0.004951873)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: true) (TestDataAndGoldenStats(firth,TestData([[D@6095bde1,[D@207617fd,[[D@33870246,Some([D@5a7c6b85)),LogitTestResults(2.7397118,15.48252239034199,List(0.5453192914466662, 439.57462590838185),0.01916332)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: false) (TestDataAndGoldenStats(lrt,TestData([[D@7f2fbad,[D@d68dc67,[[D@78d546bf,None),LogitTestResults(-0.611263,0.54266503,List(0.2901759, 1.014851),0.04693173)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: false) (TestDataAndGoldenStats(lrt,TestData([[D@7f2fbad,[D@d68dc67,[[D@78d546bf,Some([D@75dff33a)),LogitTestResults(-0.611263,0.54266503,List(0.2901759, 1.014851),0.04693173)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: false) (TestDataAndGoldenStats(lrt,TestData([[D@7f2fbad,[D@d68dc67,[[D@78d546bf,Some([D@65e051bf)),LogitTestResults(-0.591478,0.5535084,List(0.295733828, 1.035971),0.05590138)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: false) (TestDataAndGoldenStats(lrt,TestData([[D@2e202280,[D@7c926945,[[D@76de13ce,None),LogitTestResults(0.4768,1.610951,List(0.1403952, 18.48469),0.6935)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: false) (TestDataAndGoldenStats(lrt,TestData([[D@2e202280,[D@1154c903,[[D@76de13ce,None),LogitTestResults(1.4094,4.0936366,List(0.26608762, 62.97873),0.2549)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: false) (TestDataAndGoldenStats(lrt,TestData([[D@3ecfdd8b,[D@51785356,[[D@573e6ad4,None),LogitTestResults(3.1776,23.9884595,List(0.007623126, 75486.900886),0.35)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: false) (TestDataAndGoldenStats(firth,TestData([[D@6095bde1,[D@207617fd,[[D@33870246,None),LogitTestResults(3.09601263,22.109616066072057,List(0.829489688841271, 589.3203006480667),0.004951873)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: false) (TestDataAndGoldenStats(firth,TestData([[D@6095bde1,[D@207617fd,[[D@33870246,Some([D@17cbb628)),LogitTestResults(3.09601263,22.109616066072057,List(0.829489688841271, 589.3203006480667),0.004951873)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Our test against R (on Spark: false) (TestDataAndGoldenStats(firth,TestData([[D@6095bde1,[D@207617fd,[[D@33870246,Some([D@5a7c6b85)),LogitTestResults(2.7397118,15.48252239034199,List(0.5453192914466662, 439.57462590838185),0.01916332)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Does not converge in case of complete separation[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Explodes in case of linearly dependent covariates[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throw error if test is not foldable[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throw error if test is not supported[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Return NaNs if null fit didn't converge[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Return NaNs if full fit didn't converge[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Check sample number matches between phenos and covars (lrt)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Check sample number matches between phenos and covars (firth)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Check sample number matches between genos and phenos (lrt)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Check sample number matches between genos and phenos (firth)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Check sample number matches between phenos and offset (lrt)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Check sample number matches between phenos and offset (firth)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Checks covariates exist (lrt)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Checks covariates exist (firth)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Run multiple regressions (TestRowsAndGoldenStats(lrt,ArraySeq(RegressionRow([D@6684103b,[D@7c926945,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,None), RegressionRow([D@6684103b,[D@1154c903,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,None)),List(LogitTestResults(0.4768,1.610951,List(0.1403952, 18.48469),0.6935), LogitTestResults(1.4094,4.0936366,List(0.26608762, 62.97873),0.2549))))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Run multiple regressions (TestRowsAndGoldenStats(lrt,ArraySeq(RegressionRow([D@6684103b,[D@7c926945,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,Some([D@602dc2e8)), RegressionRow([D@6684103b,[D@1154c903,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,Some([D@37787d4)), RegressionRow([D@6684103b,[D@6bcc5cee,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,Some([D@2d8f8c64))),List(LogitTestResults(0.4768,1.610951,List(0.1403952, 18.48469),0.6935), LogitTestResults(1.4094,4.0936366,List(0.26608762, 62.97873),0.2549), LogitTestResults(0.341551,1.40712879,List(0.097423, 20.323856),0.797255))))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Run multiple regressions (TestRowsAndGoldenStats(firth,ArraySeq(RegressionRow([D@6684103b,[D@7c926945,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,None), RegressionRow([D@6684103b,[D@1154c903,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,None)),List(LogitTestResults(0.2434646,1.2756611586363351,List(0.1325983028940082, 12.272487887661235),0.79683), LogitTestResults(0.8731197,2.3943689267406985,List(0.22402581236358346, 25.590827845496516),0.3609153))))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Run multiple regressions (TestRowsAndGoldenStats(firth,ArraySeq(RegressionRow([D@6684103b,[D@7c926945,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,Some([D@233b21bf)), RegressionRow([D@6684103b,[D@1154c903,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,Some([D@1c4d4b2b)), RegressionRow([D@6684103b,[D@6bcc5cee,1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m1.0  ,Some([D@2d8f8c64))),List(LogitTestResults(0.2434646,1.2756611586363351,List(0.1325983028940082, 12.272487887661235),0.79683), LogitTestResults(0.8731197,2.3943689267406985,List(0.22402581236358346, 25.590827845496516),0.3609153), LogitTestResults(0.0206165,1.0208304880678392,List(0.09280033771744488, 11.229429881405775),0.9843376))))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- firth returns nan if model can't be fit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- tests are case insensitive[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- some rows separate[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 39 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.FastVCFDatasourceSuite, sbt.ForkMain$SubclassFingerscan@7be3e5e3, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFastVCFDatasourceSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- default schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parse VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- no sample ids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- with sample ids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- check parsed row[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- multiple genotype fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- filter with and without pushdown returns same results[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncalled genotype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncalled diploid genotype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- phased genotype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased genotype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- info field flags[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing info values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing format values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- dropped trailing format values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing GT format field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing calls are -1 (zero present[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing calls are -1 (only one present)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- set END field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read VCFv4.3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- splitToBiallelic option error message[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- strict validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- validation stringency (format fields)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- invalid validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- check parsed row with flattened INFO fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flattened INFO fields schema does not include END key[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flattened INFO fields schema merged for multiple files[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- prune a flattened INFO field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parse string INFO fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- partitioned file without all of header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- gzip splits are only read if they contain the beginning of the file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- misnumbered fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- multiple rows[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer non standard format fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- be permissive if schema includes fields that can't be derived from VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- add BGZ codec when reading VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncompressed files are splitable[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Tolerate lower-case nan's[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parse VEP[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parse SnpEff[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Do not break when reading index file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Do not break when reading directory with index files[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Do not break when reading VCFs with contig lines missing length[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- prune genotype fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read AD with nulls[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Tolerate inf *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 164.0 failed 1 times, most recent failure: Lost task 0.0 in stage 164.0 (TID 451) (192.168.112.122 executor driver): java.lang.NumberFormatException: For input string: "infinity"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.lang.Double.parseDouble(Double.java:538)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.immutable.StringLike.toDouble(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.immutable.StringLike.toDouble$(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.immutable.StringOps.toDouble(StringOps.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.LineCtx.parseDouble(VCFLineToInternalRowConverter.scala:407)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VCFLineToInternalRowConverter.convert(VCFLineToInternalRowConverter.scala:171)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VCFFileFormat.$anonfun$buildReader$11(VCFFileFormat.scala:222)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:512)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:364)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:890)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:890)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.Task.run(Task.scala:136)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.lang.Thread.run(Thread.java:748)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mDriver stacktrace:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2672)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2608)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2607)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2607)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1182)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1182)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.foreach(Option.scala:274)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.NumberFormatException: For input string: "infinity"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.lang.Double.parseDouble(Double.java:538)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.StringLike.toDouble(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.StringLike.toDouble$(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.StringOps.toDouble(StringOps.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.LineCtx.parseDouble(VCFLineToInternalRowConverter.scala:407)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VCFLineToInternalRowConverter.convert(VCFLineToInternalRowConverter.scala:171)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VCFFileFormat.$anonfun$buildReader$11(VCFFileFormat.scala:222)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Tolerate genotype inf *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 167.0 failed 1 times, most recent failure: Lost task 0.0 in stage 167.0 (TID 456) (192.168.112.122 executor driver): java.lang.IllegalArgumentException: Could not parse FORMAT field GP. Exception: For input string: "inf"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.common.HasStringency.raiseValidationError(HasStringency.scala:25)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.common.HasStringency.raiseValidationError$(HasStringency.scala:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.raiseValidationError(VariantContextToInternalRowConverter.scala:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.tryWithWarning(VariantContextToInternalRowConverter.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.updateFormatField(VariantContextToInternalRowConverter.scala:443)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeGenotypeConverter$12(VariantContextToInternalRowConverter.scala:132)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeGenotypeConverter$12$adapted(VariantContextToInternalRowConverter.scala:132)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:41)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeConverter$13(VariantContextToInternalRowConverter.scala:90)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeConverter$13$adapted(VariantContextToInternalRowConverter.scala:84)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:41)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.convertRow(VariantContextToInternalRowConverter.scala:146)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.SchemaDelegate$NormalDelegate.$anonfun$toRows$1(VCFFileFormat.scala:463)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.next(FileScanRDD.scala:189)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:364)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:890)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:890)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.Task.run(Task.scala:136)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.lang.Thread.run(Thread.java:748)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mCaused by: java.lang.NumberFormatException: For input string: "inf"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.lang.Double.parseDouble(Double.java:538)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.immutable.StringLike.toDouble(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.immutable.StringLike.toDouble$(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.immutable.StringOps.toDouble(StringOps.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$updateFormatField$4(VariantContextToInternalRowConverter.scala:447)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.obj2any(VariantContextToInternalRowConverter.scala:529)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$updateFormatField$1(VariantContextToInternalRowConverter.scala:447)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.tryWithWarning(VariantContextToInternalRowConverter.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	... 32 more[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mDriver stacktrace:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2672)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2608)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2607)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2607)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1182)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1182)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.foreach(Option.scala:274)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.IllegalArgumentException: Could not parse FORMAT field GP. Exception: For input string: "inf"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.common.HasStringency.raiseValidationError(HasStringency.scala:25)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.common.HasStringency.raiseValidationError$(HasStringency.scala:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.raiseValidationError(VariantContextToInternalRowConverter.scala:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.tryWithWarning(VariantContextToInternalRowConverter.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.updateFormatField(VariantContextToInternalRowConverter.scala:443)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeGenotypeConverter$12(VariantContextToInternalRowConverter.scala:132)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeGenotypeConverter$12$adapted(VariantContextToInternalRowConverter.scala:132)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:41)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeConverter$13(VariantContextToInternalRowConverter.scala:90)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.NumberFormatException: For input string: "inf"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.lang.Double.parseDouble(Double.java:538)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.StringLike.toDouble(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.StringLike.toDouble$(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.StringOps.toDouble(StringOps.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$updateFormatField$4(VariantContextToInternalRowConverter.scala:447)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.obj2any(VariantContextToInternalRowConverter.scala:529)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$updateFormatField$1(VariantContextToInternalRowConverter.scala:447)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.tryWithWarning(VariantContextToInternalRowConverter.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Tolerate genotype nan *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 170.0 failed 1 times, most recent failure: Lost task 0.0 in stage 170.0 (TID 461) (192.168.112.122 executor driver): java.lang.IllegalArgumentException: Could not parse FORMAT field GP. Exception: For input string: "Nan"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.common.HasStringency.raiseValidationError(HasStringency.scala:25)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.common.HasStringency.raiseValidationError$(HasStringency.scala:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.raiseValidationError(VariantContextToInternalRowConverter.scala:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.tryWithWarning(VariantContextToInternalRowConverter.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.updateFormatField(VariantContextToInternalRowConverter.scala:443)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeGenotypeConverter$12(VariantContextToInternalRowConverter.scala:132)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeGenotypeConverter$12$adapted(VariantContextToInternalRowConverter.scala:132)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:41)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeConverter$13(VariantContextToInternalRowConverter.scala:90)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeConverter$13$adapted(VariantContextToInternalRowConverter.scala:84)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:41)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.convertRow(VariantContextToInternalRowConverter.scala:146)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.SchemaDelegate$NormalDelegate.$anonfun$toRows$1(VCFFileFormat.scala:463)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.next(FileScanRDD.scala:189)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:364)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:890)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:890)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.Task.run(Task.scala:136)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.lang.Thread.run(Thread.java:748)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mCaused by: java.lang.NumberFormatException: For input string: "Nan"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.lang.Double.parseDouble(Double.java:538)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.immutable.StringLike.toDouble(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.immutable.StringLike.toDouble$(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.immutable.StringOps.toDouble(StringOps.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$updateFormatField$4(VariantContextToInternalRowConverter.scala:447)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.obj2any(VariantContextToInternalRowConverter.scala:529)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$updateFormatField$1(VariantContextToInternalRowConverter.scala:447)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at io.projectglow.vcf.VariantContextToInternalRowConverter.tryWithWarning(VariantContextToInternalRowConverter.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	... 32 more[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mDriver stacktrace:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2672)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2608)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2607)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2607)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1182)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1182)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.foreach(Option.scala:274)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.IllegalArgumentException: Could not parse FORMAT field GP. Exception: For input string: "Nan"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.common.HasStringency.raiseValidationError(HasStringency.scala:25)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.common.HasStringency.raiseValidationError$(HasStringency.scala:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.raiseValidationError(VariantContextToInternalRowConverter.scala:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.tryWithWarning(VariantContextToInternalRowConverter.scala:176)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.updateFormatField(VariantContextToInternalRowConverter.scala:443)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeGenotypeConverter$12(VariantContextToInternalRowConverter.scala:132)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeGenotypeConverter$12$adapted(VariantContextToInternalRowConverter.scala:132)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:41)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.sql.util.RowConverter.apply(RowConverter.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$makeConverter$13(VariantContextToInternalRowConverter.scala:90)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.NumberFormatException: For input string: "Nan"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.lang.Double.parseDouble(Double.java:538)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.StringLike.toDouble(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.StringLike.toDouble$(StringLike.scala:321)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.StringOps.toDouble(StringOps.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$updateFormatField$4(VariantContextToInternalRowConverter.scala:447)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.obj2any(VariantContextToInternalRowConverter.scala:529)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.$anonfun$updateFormatField$1(VariantContextToInternalRowConverter.scala:447)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at io.projectglow.vcf.VariantContextToInternalRowConverter.tryWithWarning(VariantContextToInternalRowConverter.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read string that starts with .[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 49 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.sql.ComDatabricksDataSourceSuite, sbt.ForkMain$SubclassFingerscan@106b9951, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mComDatabricksDataSourceSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read (DataSources(com.databricks.vcf,vcf,test-data/CEUTrio.HiSeq.WGS.b37.NA12878.20.21.vcf))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read (DataSources(com.databricks.bgen,bgen,test-data/bgen/example.16bits.bgen))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- write (DataSources(com.databricks.vcf,vcf,test-data/CEUTrio.HiSeq.WGS.b37.NA12878.20.21.vcf))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- write (DataSources(com.databricks.bigvcf,vcf,test-data/CEUTrio.HiSeq.WGS.b37.NA12878.20.21.vcf))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- write (DataSources(com.databricks.bigbgen,bgen,test-data/bgen/example.16bits.bgen))[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.tertiary.MomentAggStateSuite, sbt.ForkMain$SubclassFingerscan@3aa8cd63, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMomentAggStateSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- merge[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- merge (count == 0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- merge (left count == 0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- merge (right count == 0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- update[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.VCFDatasourceSuite, sbt.ForkMain$SubclassFingerscan@5296b84f, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVCFDatasourceSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- default schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parse VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- no sample ids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- with sample ids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- check parsed row[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- multiple genotype fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- filter with and without pushdown returns same results[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncalled genotype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncalled diploid genotype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- phased genotype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unphased genotype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- info field flags[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing info values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing format values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- dropped trailing format values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing GT format field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing calls are -1 (zero present[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- missing calls are -1 (only one present)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- set END field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read VCFv4.3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- splitToBiallelic option error message[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- strict validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- validation stringency (format fields)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- invalid validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- check parsed row with flattened INFO fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flattened INFO fields schema does not include END key[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- flattened INFO fields schema merged for multiple files[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- prune a flattened INFO field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- parse string INFO fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- partitioned file without all of header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- gzip splits are only read if they contain the beginning of the file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- misnumbered fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- multiple rows[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer non standard format fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- be permissive if schema includes fields that can't be derived from VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- add BGZ codec when reading VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uncompressed files are splitable[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Tolerate lower-case nan's[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parse VEP[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Parse SnpEff[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Do not break when reading index file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Do not break when reading directory with index files[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Do not break when reading VCFs with contig lines missing length[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- prune genotype fields[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 44 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.common.SimpleIntervalSuite, sbt.ForkMain$SubclassFingerscan@3bb8c235, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSimpleIntervalSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Illegal argument[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- getContig, getStart, getEnd[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- overlaps[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- intersect[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- spanWith[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.SingleFileVCFWriterSuite, sbt.ForkMain$SubclassFingerscan@2c7f82d9, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSingleFileVCFWriterSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read single sample VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read single sample VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read multi-sample VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read multi-sample VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read VEP VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read VEP VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read Loftee VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read Loftee VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read SnpEff VCF with VCF parser ((flattenInfoFields,true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read SnpEff VCF with VCF parser ((,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Use VCF parser without sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Use VCF parser without sample IDs (many partitions)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Use VCF parser with sample IDs (many partitions)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Strict validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Output bgzf compressed file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Output gzip compressed file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- variant context validation settings obey stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Provided header is sorted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Path header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Infer header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Empty file with inferred header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Empty file with determined header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No genotypes column[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No sample IDs column[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- write succeeds if optional fields are dropped[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- validate schema before write[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- validate genotype schema before write[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Corrupted header lines are not written[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Invalid validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Check BGZF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Some empty partitions and by default infer sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Some empty partitions and explicitly infer sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Bigvcf header check for empty file with determined header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Unions inferred sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Matching number of missing sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Mixed inferred and missing sample IDs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Non-matching number of missing sample IDs[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 37 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.GlowSuite, sbt.ForkMain$SubclassFingerscan@141c917e, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGlowSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uses service provider[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- transformer names are converted to snake case[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- options are converted to snake case[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- java map options[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- tuple options[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- accept non-string values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- float arguments[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- registers bgz conf[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 8 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.InternalRowToVariantContextConverterSuite, sbt.ForkMain$SubclassFingerscan@507db4ea, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInternalRowToVariantContextConverterSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- common schema options pass strict validation (Map(flattenInfoFields -> true, includeSampleIds -> true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- common schema options pass strict validation (Map(flattenInfoFields -> true, includeSampleIds -> false))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- common schema options pass strict validation (Map(flattenInfoFields -> false, includeSampleIds -> false))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- find genotype schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- no genotype schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- genotype schema is not array[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- genotype schema of arrays does not contain structs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- convert string fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Single sample[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Multiple samples[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- GVCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Default VCF row[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Set VCF row[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Set GL field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No genotypes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- No GT field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throws IllegalArgumentException with no reference allele[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throws ArrayIndexOutOfBoundsException with allele index out of range[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throw for missing INFO header line with strict validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throw for missing FORMAT header line with strict validation stringency[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 20 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.sql.SingleFileWriterSuite, sbt.ForkMain$SubclassFingerscan@3cef2ef8, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSingleFileWriterSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- uses service loader[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.VariantContextToInternalRowConverterSuite, sbt.ForkMain$SubclassFingerscan@293cde1e, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVariantContextToInternalRowConverterSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Array fields converted to strings (true)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Array fields converted to strings (false)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Single sample[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Multiple samples[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- GVCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Default VariantContext[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Default Genotype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Checks runtime datatype for format array fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- convert primitive array[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Set VariantContext and Genotypes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throw for missing INFO header line with strict validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Throw for missing FORMAT header line with strict validation stringency[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Convert objects to strings ((null,.))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Convert objects to strings ((abc,abc))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Convert objects to strings ((0.5,0.5))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Convert objects to strings ((1,1))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Convert objects to strings ((true,))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Convert objects to strings ((false,null))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Convert objects to strings (([0.1, 1.2],0.1,1.2))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Convert objects to strings (([D@1dce8617,0.2,2.4,4.8))[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 20 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(io.projectglow.vcf.VCFHeaderUtilsSuite, sbt.ForkMain$SubclassFingerscan@6a7b4940, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVCFHeaderUtilsSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- fall back[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- infer header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- use header path[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- use literal header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- throw on bad literal header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- no vcf header arg and no default header[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- invalid path[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- invalid VCF[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- merge all header lines (true)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- merge all header lines (false)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- verify that INFO lines are compatible[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- verify that FORMAT lines are compatible[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- verify that contig lines are compatible[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- all format and info lines with same id and different types[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- does not try to read tabix indices[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 15 events.[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 minutes, 42 seconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 740[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 44, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 729, failed 11, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 11 TESTS FAILED ***[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.pipe.TextPiperSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.vcf.VCFStreamWriterSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.bgen.BgenRowConverterSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.tertiary.NewtonIterationsStateSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.pipe.PipeTransformerSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.bgen.BgenReaderSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.util.StringUtilsSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.vcf.VCFSchemaInferrerSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.sql.util.ExpectsGenotypeFieldsSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.tertiary.LiftOverCoordinatesExprSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.tertiary.VariantUtilExprsSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.tertiary.LinearRegressionSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.bgen.BgenWriterSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org.apache.spark.sql.catalyst.expressions.QuinaryExpressionSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.plink.PlinkReaderSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.sql.BigFileDatasourceSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.sql.SqlExtensionProviderSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.vcf.TabixHelperSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.vcf.VCFPiperSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.tertiary.SampleQcExprsSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.normalizevariants.NormalizeVariantsTransformerSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.splitmultiallelics.VariantSplitterSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.LiftOverVariantsTransformerSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.common.WithUtilsSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.splitmultiallelics.SplitMultiallelicsTransformerSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.normalizevariants.VariantNormalizerSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.pipe.CSVPiperSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.transformers.blockvariantsandsamples.BlockVariantsAndSamplesTransformerSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.gff.GffReaderSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.tertiary.VariantQcExprsSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.tertiary.LogisticRegressionSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.sql.ComDatabricksDataSourceSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.tertiary.MomentAggStateSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.vcf.VCFDatasourceSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.common.SimpleIntervalSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.vcf.SingleFileVCFWriterSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.GlowSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.vcf.InternalRowToVariantContextConverterSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.sql.SingleFileWriterSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.vcf.VariantContextToInternalRowConverterSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.projectglow.vcf.VCFHeaderUtilsSuite[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	io.projectglow.tertiary.AggregateByIndexSuite[0m
+[0m[[0m[31merror[0m] [0m[0m	io.projectglow.vcf.MultiFileVCFWriterSuite[0m
+[0m[[0m[31merror[0m] [0m[0m	io.projectglow.vcf.FastVCFDatasourceSuite[0m
+[0m[[0m[31merror[0m] [0m[0m(stagedRelease / Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

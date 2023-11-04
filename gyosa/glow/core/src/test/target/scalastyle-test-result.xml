@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.0">
+ <file name="/home/gsd/gyosa/glow/core/src/test/scala/io/projectglow/transformers/normalizevariants/VariantNormalizerSuite.scala">
+  <error column="6" line="42" source="org.scalastyle.scalariform.ParameterNumberChecker" severity="warning" message="parameter.length.message"/>
+ </file>
+</checkstyle>

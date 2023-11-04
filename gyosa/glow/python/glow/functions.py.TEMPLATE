@@ -1,0 +1,65 @@
+# Copyright 2019 The Glow Authors
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#     http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+# The Glow Python functions
+# Note that this file is generated from the definitions in functions.yml.
+
+from pyspark import SparkContext
+from pyspark.sql.column import Column, _to_java_column, _to_seq
+from typeguard import check_argument_types, check_return_type
+from typing import Union
+
+__all__ = [] # Extended within each group
+
+def sc():
+    return SparkContext._active_spark_context
+
+{% for group_name, group in groups.items() %}
+########### {{ group_name }}
+{% for function in group['functions'] if not function.exclude_python %}
+
+__all__.append('{{ function.name }}')
+def {{ function.name }}({{ function.args|map('fmt_python_signature')|join(', ') }}) -> Column:
+    """
+    {{ function.doc|trim|indent(4) }}
+
+    Added in version {{ function.since }}.
+
+    Examples:
+        {{ function.examples.python|trim|indent(8) }}
+
+    Args:
+    {% for arg in function.args %}
+        {{ arg.name }} : {{ arg.doc|trim|indent(8) }}
+    {% endfor %}
+
+    Returns:
+        {{ function.returns|trim|indent(4) }}
+    """
+    assert check_argument_types()
+{% if function.args[-1].is_optional %}
+    if {{ function.args[-1].name }} is None:
+        output = Column(sc()._jvm.io.projectglow.functions.{{ function.name }}({{ function.args[0:-1]|map('fmt_python_call')|join(', ') }}))
+    else:
+        output = Column(sc()._jvm.io.projectglow.functions.{{ function.name }}({{ function.args|map('fmt_python_call')|join(', ') }}))
+{% else %}
+    output = Column(sc()._jvm.io.projectglow.functions.{{ function.name }}({{ function.args|map('fmt_python_call')|join(', ') }}))
+{% endif %}
+    assert check_return_type(output)
+    return output
+
+{% endfor %}
+{% endfor %}
+

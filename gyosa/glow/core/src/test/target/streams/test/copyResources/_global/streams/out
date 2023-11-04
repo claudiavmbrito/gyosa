@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/gsd/gyosa/glow/core/src/test/resources/log4j.properties,/home/gsd/gyosa/glow/core/src/test/target/scala-2.12/test-classes/log4j.properties)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/gsd/gyosa/glow/core/src/test/resources/test-functions.yml,/home/gsd/gyosa/glow/core/src/test/target/scala-2.12/test-classes/test-functions.yml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/gsd/gyosa/glow/core/src/test/resources/META-INF/services/io.projectglow.transformers.pipe.OutputFormatterFactory,/home/gsd/gyosa/glow/core/src/test/target/scala-2.12/test-classes/META-INF/services/io.projectglow.transformers.pipe.OutputFormatterFactory)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/gsd/gyosa/glow/core/src/test/resources/META-INF/services/io.projectglow.transformers.pipe.InputFormatterFactory,/home/gsd/gyosa/glow/core/src/test/target/scala-2.12/test-classes/META-INF/services/io.projectglow.transformers.pipe.InputFormatterFactory)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/gsd/gyosa/glow/core/src/test/resources/META-INF/services/io.projectglow.sql.BigFileUploader,/home/gsd/gyosa/glow/core/src/test/target/scala-2.12/test-classes/META-INF/services/io.projectglow.sql.BigFileUploader)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/gsd/gyosa/glow/core/src/test/resources/META-INF/services/io.projectglow.DataFrameTransformer,/home/gsd/gyosa/glow/core/src/test/target/scala-2.12/test-classes/META-INF/services/io.projectglow.DataFrameTransformer)[0m

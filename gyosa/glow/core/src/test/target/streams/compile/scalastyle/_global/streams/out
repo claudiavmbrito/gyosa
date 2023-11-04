@@ -1,0 +1,8 @@
+[0m[[0m[0minfo[0m] [0m[0mscalastyle using config /home/gsd/gyosa/glow/scalastyle-config.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mStarting scalastyle[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Processed 0 file(s)[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Found 0 errors[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Found 0 warnings[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Found 0 infos[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Finished in 1 ms[0m
+[0m[[0m[32msuccess[0m] [0m[0mcreated output: /home/gsd/gyosa/glow/core/src/test/target[0m

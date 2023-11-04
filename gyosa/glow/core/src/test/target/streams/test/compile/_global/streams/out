@@ -1,0 +1,8 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/gsd/gyosa/glow/core/src/test/scala/io/projectglow/plink/PlinkReaderSuite.scala:47:25: abstract type T is unchecked since it is eliminated by erasure[0m
+[0m[[0m[33mwarn[0m] [0m[0m      if (e.isInstanceOf[T] && e.getMessage.contains(msg)) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/gsd/gyosa/glow/core/src/test/scala/io/projectglow/transformers/splitmultiallelics/VariantSplitterSuite.scala:222:45: a pure expression does nothing in statement position[0m
+[0m[[0m[33mwarn[0m] [0m[0m        case _: IllegalArgumentException => succeed[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 16 deprecation warnings; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

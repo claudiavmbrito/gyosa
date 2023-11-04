@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.12.8":{"hashes":[["/home/gsd/gyosa/glow/project/Dependencies.scala","5291924a5c3a70f62fe9b087b59575a3381cb159"],["/home/gsd/gyosa/glow/project/StableVersionPlugin.scala","be4731b3d39ac9c389b2a68f84b029799a70ff16"]],"lastModifiedTimes":[]}}]
