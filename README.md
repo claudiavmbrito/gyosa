@@ -19,14 +19,13 @@ The main goal of **GYOSA** is to provide the community with a privacy-preserving
 ___
 ## Getting Started
 
-The code for **GYOSA** will be fully published here **soon** along with information on all its dependencies.
-
 To offer an easy-to-use guide, we provide scripts to install all the components. 
 
 #### Dependencies
 
 Gyosa was built and tested with Intel's SGX SDK `2.6`, SGX Driver `1.8`, and Gramine `1.0` (previously named Graphene-SGX).
 By relying on Glow, Gyosa depends on Apache Spark `3.2.1`, which upgrades from the previously built Soteria (Apache Spark `2.3.4`). 
+The current implementation works for Ubuntu 18.04. 
 
 ### Set up Gyosa
 
