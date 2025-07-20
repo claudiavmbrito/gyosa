@@ -1,3 +1,5 @@
+# GYOSA: Privacy-Preserving Genomic Analysis Framework
+
 <h1 align="center">
 <img src="https://img.shields.io/badge/status-research%20prototype-green.svg" />
 <a href="https://opensource.org/licenses/BSD-3-Clause">
@@ -5,14 +7,33 @@
 </a>
 </h1>
 
-**GYOSA** is a privacy-preserving machine learning solution developed on top of [Soteria](https://github.com/claudiavmbrito/Soteria), [GLOW](https://github.com/projectglow/glow) and [Apache Spark](https://github.com/apache/spark) by resorting to [Gramine](https://github.com/gramineproject/gramine).
+**GYOSA** is a privacy-preserving genomic analysis framework that enables secure genome-wide association studies (GWAS) in untrusted cloud environments. Built on top of [Soteria](https://github.com/claudiavmbrito/Soteria), [GLOW](https://github.com/projectglow/glow), and [Apache Spark](https://github.com/apache/spark), GYOSA leverages Intel SGX through [Gramine](https://github.com/gramineproject/gramine) to provide hardware-based privacy guarantees.
 
-Built upon the concept of computation partitioning, **GYOSA** allows running GWASes inside the enclaves while running non-sensitive code outside. 
-The main goal of **GYOSA** is to provide the community with a privacy-preserving and distributed solution to run genomic analysis in untrusted third-party infrastructures. 
+## Key Features
+
+- **Hardware-based Privacy**: Uses Intel SGX enclaves to protect sensitive genomic computations
+- **Computation Partitioning**: Separates sensitive operations (inside enclaves) from non-sensitive operations (outside enclaves)
+- **Distributed Processing**: Built on Apache Spark for scalable genomic analysis
+- **Encryption Support**: Provides AES encryption for VCF files and genomic data
+
+
+## Citation
+
+If you use GYOSA in your research, please cite our paper:
+
+```bibtex
+@article{brito2025exploiting,
+  title={Exploiting Trusted Execution Environments and Distributed Computation for Genomic Association Tests},
+  author={Brito, Cl{\'a}udia V and Ferreira, Pedro G and Paulo, Jo{\~a}o T},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  year={2025},
+  publisher={IEEE}
+}
+```
 
 **Note 1**: This is an academic proof-of-concept prototype and has not received careful code review. This implementation is NOT ready for production use.
 
-**Note 2**: This repository is being updated. 
+**Note 2**: This repository contains research prototypes for privacy-preserving genomics analysis.
 
 ___
 ## Getting Started
